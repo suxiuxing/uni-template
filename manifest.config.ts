@@ -8,8 +8,6 @@ function getMode(): string {
   return modeFlagIndex !== -1 ? args[modeFlagIndex + 1]! : args[0] === 'build' ? 'production' : 'development'; // 默认 development
 }
 
-console.log(process.env.mode, 111);
-
 const {
   VITE_APP_BASE = '/',
   VITE_APP_TITLE = '',
