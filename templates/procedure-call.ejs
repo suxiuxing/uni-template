@@ -11,6 +11,8 @@ const queryName = (query && query.name) || "query";
 const pathParams = _.values(parameters);
 const pathParamsNames = _.map(pathParams, "name");
 
+const usage = _.camelCase(`${route.request.method}_${route.request.path.split('/').slice(-3).join('_')}`);
+
 const isFetchTemplate = config.httpClientType === HTTP_CLIENT.FETCH;
 
 const requestConfigParam = {
@@ -80,6 +82,7 @@ const describeReturnType = () => {
 }
 
 %>
+
 /**
 <%~ routeDocs.description %>
 
@@ -88,8 +91,8 @@ const describeReturnType = () => {
 <%~ routeDocs.lines %>
 
 */
-export const <%~ route.routeName.usage %> = (<%~ wrapperArgs %>) =>
-    request <<%~ responseType %>>({
+export const <%~ usage %> = (<%~ wrapperArgs %>) =>
+    request <<%~ type %>>({
         path: `<%~ path %>`,
         method: '<%~ _.upperCase(method) %>',
         <%~ queryTmpl ? `query: ${queryTmpl},` : '' %>
@@ -97,18 +100,6 @@ export const <%~ route.routeName.usage %> = (<%~ wrapperArgs %>) =>
         <%~ securityTmpl ? `secure: ${securityTmpl},` : '' %>
         <%~ bodyContentKindTmpl ? `type: ${bodyContentKindTmpl},` : '' %>
         <%~ responseFormatTmpl ? `format: ${responseFormatTmpl},` : '' %>
-        skipErrorHandler: false,
+        skipBizLogic: false,
         ...<%~ _.get(requestConfigParam, "name") %>,
     })
-export const <%~ `${route.routeName.usage}SkipErrorHandler` %> = (<%~ wrapperArgs %>) =>
-    request <<%~ responseType %>>({
-        path: `<%~ path %>`,
-        method: '<%~ _.upperCase(method) %>',
-        <%~ queryTmpl ? `query: ${queryTmpl},` : '' %>
-        <%~ bodyTmpl ? `body: ${bodyTmpl},` : '' %>
-        <%~ securityTmpl ? `secure: ${securityTmpl},` : '' %>
-        <%~ bodyContentKindTmpl ? `type: ${bodyContentKindTmpl},` : '' %>
-        <%~ responseFormatTmpl ? `format: ${responseFormatTmpl},` : '' %>
-        skipErrorHandler: true,
-        ...<%~ _.get(requestConfigParam, "name") %>,
-})

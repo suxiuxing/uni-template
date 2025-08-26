@@ -41,8 +41,6 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@alova/adapter-uniapp": "^2.0.14",
-    "@alova/shared": "^1.3.1",
     "@dcloudio/uni-app": "3.0.0-4070620250821001",
     "@dcloudio/uni-app-harmony": "3.0.0-4070620250821001",
     "@dcloudio/uni-app-plus": "3.0.0-4070620250821001",
@@ -59,14 +57,14 @@
     "@dcloudio/uni-mp-xhs": "3.0.0-4070620250821001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-4070620250821001",
     "@tanstack/vue-query": "^5.85.5",
+    "@uni-helper/uni-network": "^0.21.5",
     "abortcontroller-polyfill": "^1.7.8",
-    "alova": "^3.3.4",
     "dayjs": "^1.11.13",
     "es-toolkit": "^1.39.10",
     "pinia": "2.0.36",
+    "pinia-plugin-persistedstate": "^3.2.3",
     "vue": "3.4.21",
-    "vue-hooks-plus": "^2.4.0",
-    "wot-design-uni": "^1.12.0",
+    "wot-design-uni": "^1.12.1",
     "z-paging": "^2.8.7"
   },
   "devDependencies": {
@@ -81,7 +79,7 @@
     "@eslint/js": "^9.34.0",
     "@iconify-json/mdi": "^1.2.3",
     "@iconify-json/svg-spinners": "^1.2.4",
-    "@types/node": "^22.17.2",
+    "@types/node": "^22.18.0",
     "@uni-helper/vite-plugin-uni-components": "^0.2.0",
     "@uni-helper/vite-plugin-uni-manifest": "^0.2.8",
     "@uni-ku/bundle-optimizer": "1.3.15-beta.2",
@@ -105,10 +103,10 @@
     "tailwindcss": "^3.4.17",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.40.0",
+    "typescript-eslint": "^8.41.0",
     "vite": "^5.4.19",
     "vue-tsc": "^3.0.6",
-    "weapp-tailwindcss": "^4.2.5"
+    "weapp-tailwindcss": "^4.2.6"
   },
   "packageManager": "pnpm@10.15.0"
 }

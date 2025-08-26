@@ -15,13 +15,26 @@ const {
   VITE_APPID_WX = '',
 } = loadEnv(getMode(), process.cwd());
 
+// https://uniapp.dcloud.net.cn/collocation/manifest.html
 export default defineManifestConfig({
   name: VITE_APP_TITLE,
   appid: VITE_APPID_UNI,
   description: '',
+  locale: 'zh-Hans',
   versionName: '1.0.0',
   versionCode: '100',
   transformPx: false,
+  networkTimeout: {
+    request: 60000,
+    connectSocket: 60000,
+    uploadFile: 60000,
+    downloadFile: 60000,
+  },
+  debug: false,
+  uniStatistics: {
+    enable: false,
+  },
+  vueVersion: '3',
   h5: {
     router: {
       base: VITE_APP_BASE,
@@ -93,8 +106,4 @@ export default defineManifestConfig({
   'mp-toutiao': {
     usingComponents: true,
   },
-  uniStatistics: {
-    enable: false,
-  },
-  vueVersion: '3',
 });

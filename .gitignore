@@ -23,3 +23,6 @@ dist
 /async-component.d.ts
 /async-import.d.ts
 /components.d.ts
+
+project.config.json
+project.private.config.json

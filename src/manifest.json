@@ -42,7 +42,7 @@
   },
   "quickapp": {},
   "mp-weixin": {
-    "appid": "",
+    "appid": "wx3479b368db04761d",
     "setting": {
       "urlCheck": false,
       "es6": true,
@@ -67,6 +67,14 @@
     "enable": false
   },
   "vueVersion": "3",
+  "locale": "zh-Hans",
+  "networkTimeout": {
+    "request": 60000,
+    "connectSocket": 60000,
+    "uploadFile": 60000,
+    "downloadFile": 60000
+  },
+  "debug": false,
   "h5": {
     "router": {
       "base": "/"
