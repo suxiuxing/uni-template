@@ -59,7 +59,7 @@
     "@tanstack/vue-query": "^5.85.5",
     "@uni-helper/uni-network": "^0.21.5",
     "abortcontroller-polyfill": "^1.7.8",
-    "dayjs": "^1.11.13",
+    "dayjs": "^1.11.14",
     "es-toolkit": "^1.39.10",
     "pinia": "2.0.36",
     "pinia-plugin-persistedstate": "^3.2.3",
