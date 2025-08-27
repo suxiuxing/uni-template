@@ -77,12 +77,9 @@ importers:
       vue:
         specifier: 3.4.21
         version: 3.4.21(typescript@5.9.2)
-      vue-request:
-        specifier: ^2.0.4
-        version: 2.0.4(vue@3.4.21(typescript@5.9.2))
       wot-design-uni:
-        specifier: ^1.12.1
-        version: 1.12.1(vue@3.4.21(typescript@5.9.2))
+        specifier: ^1.12.2
+        version: 1.12.2(vue@3.4.21(typescript@5.9.2))
       z-paging:
         specifier: ^2.8.7
         version: 2.8.7
@@ -5903,16 +5900,6 @@ packages:
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
 
-  vue-request@2.0.4:
-    resolution: {integrity: sha512-+Tu5rDy6ItF9UdD21Mmbjiq5Pq6NZSN9juH72hNQTMn1whHh4KZPTKWVLK2YS4nzbuEnPs+82G91AA2Fgd93mg==}
-    engines: {node: '>=14'}
-    peerDependencies:
-      '@vue/composition-api': ^1.0.0-rc.1
-      vue: ^2.0.0 || >=3.0.0
-    peerDependenciesMeta:
-      '@vue/composition-api':
-        optional: true
-
   vue-router@4.5.1:
     resolution: {integrity: sha512-ogAF3P97NPm8fJsE4by9dwSYtDwXIY1nFY9T6DyQnGHd1E2Da94w9JIolpe42LJGIl0DwOHBi8TcRPlPGwbTtw==}
     peerDependencies:
@@ -5996,8 +5983,8 @@ packages:
     resolution: {integrity: sha512-BN22B5eaMMI9UMtjrGd5g5eCYPpCPDUy0FJXbYsaT5zYxjFOckS53SQDE3pWkVoWpHXVb3BrYcEN4Twa55B5cA==}
     engines: {node: '>=0.10.0'}
 
-  wot-design-uni@1.12.1:
-    resolution: {integrity: sha512-G6oTsnlNt6vbF3sa9zLapasykqhnXhBY1vM0IGJakcWtuU0jNQAHYTzXwe0asHtjxb9SFxE4Z1JqdL4yCgWvdg==}
+  wot-design-uni@1.12.2:
+    resolution: {integrity: sha512-jgVH4n8Mrw7Pznxfjw7aRPfFtPfsahRmLKBMk9EIZs9QIaiKUXeljjXeA4a6er7UGDvspEvGkhTWJfedMP8SKg==}
     engines: {HBuilderX: ^3.8.7}
     peerDependencies:
       vue: '>=3.2.47'
@@ -13039,11 +13026,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vue-request@2.0.4(vue@3.4.21(typescript@5.9.2)):
-    dependencies:
-      vue: 3.4.21(typescript@5.9.2)
-      vue-demi: 0.14.10(vue@3.4.21(typescript@5.9.2))
-
   vue-router@4.5.1(vue@3.4.21(typescript@5.9.2)):
     dependencies:
       '@vue/devtools-api': 6.6.4
@@ -13150,7 +13132,7 @@ snapshots:
 
   word-wrap@1.2.5: {}
 
-  wot-design-uni@1.12.1(vue@3.4.21(typescript@5.9.2)):
+  wot-design-uni@1.12.2(vue@3.4.21(typescript@5.9.2)):
     dependencies:
       vue: 3.4.21(typescript@5.9.2)
 
