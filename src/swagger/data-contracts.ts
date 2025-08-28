@@ -1,5 +1,6 @@
  
 /* tslint:disable */
+// @ts-nocheck
 /*
  * ---------------------------------------------------------------
  * ## THIS FILE WAS GENERATED VIA SWAGGER-TYPESCRIPT-API        ##
@@ -2529,8 +2530,8 @@ export interface IOParameter {
   sourceExpression?: string;
   target?: string;
   targetExpression?: string;
-  transient?: boolean;
   values?: any;
+  transient?: boolean;
 }
 
 export interface KeyValueStringString {
@@ -3244,27 +3245,27 @@ export interface ResponseModel {
   repCode?: string;
   repMsg?: string;
   repData?: any;
-  repCodeEnum?:
-    | 'SUCCESS'
-    | 'ERROR'
-    | 'EXCEPTION'
-    | 'BLANK_ERROR'
-    | 'NULL_ERROR'
-    | 'NOT_NULL_ERROR'
-    | 'NOT_EXIST_ERROR'
-    | 'EXIST_ERROR'
-    | 'PARAM_TYPE_ERROR'
-    | 'PARAM_FORMAT_ERROR'
-    | 'API_CAPTCHA_INVALID'
-    | 'API_CAPTCHA_COORDINATE_ERROR'
-    | 'API_CAPTCHA_ERROR'
-    | 'API_CAPTCHA_BASEMAP_NULL'
-    | 'API_REQ_LIMIT_GET_ERROR'
-    | 'API_REQ_INVALID'
-    | 'API_REQ_LOCK_GET_ERROR'
-    | 'API_REQ_LIMIT_CHECK_ERROR'
-    | 'API_REQ_LIMIT_VERIFY_ERROR';
   success?: boolean;
+  repCodeEnum?:
+    | "SUCCESS"
+    | "ERROR"
+    | "EXCEPTION"
+    | "BLANK_ERROR"
+    | "NULL_ERROR"
+    | "NOT_NULL_ERROR"
+    | "NOT_EXIST_ERROR"
+    | "EXIST_ERROR"
+    | "PARAM_TYPE_ERROR"
+    | "PARAM_FORMAT_ERROR"
+    | "API_CAPTCHA_INVALID"
+    | "API_CAPTCHA_COORDINATE_ERROR"
+    | "API_CAPTCHA_ERROR"
+    | "API_CAPTCHA_BASEMAP_NULL"
+    | "API_REQ_LIMIT_GET_ERROR"
+    | "API_REQ_INVALID"
+    | "API_REQ_LOCK_GET_ERROR"
+    | "API_REQ_LIMIT_CHECK_ERROR"
+    | "API_REQ_LIMIT_VERIFY_ERROR";
 }
 
 /** 管理后台 - 社交绑定登录 Request VO，使用 code 授权码 + 账号密码 */

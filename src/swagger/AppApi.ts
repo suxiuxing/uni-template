@@ -1,5 +1,6 @@
  
 /* tslint:disable */
+// @ts-nocheck
 /*
  * ---------------------------------------------------------------
  * ## THIS FILE WAS GENERATED VIA SWAGGER-TYPESCRIPT-API        ##
@@ -9,8 +10,8 @@
  * ---------------------------------------------------------------
  */
 
-import type { RequestParams } from '@/utils/request';
-import { ContentType, request } from '@/utils/request';
+import type { RequestParams } from "@/utils/request";
+import { ContentType, request } from "@/utils/request";
 import type {
   CommonResultAppTenantRespVO,
   CommonResultFilePresignedUrlRespVO,
@@ -19,7 +20,7 @@ import type {
   CommonResultLong,
   CommonResultString,
   FileCreateReqVO,
-} from './data-contracts';
+} from "./data-contracts";
 
 /**
  * No description
@@ -42,7 +43,7 @@ export const postInfraFileUpload = (
 ) =>
   request<CommonResultString>({
     path: `/app-api/infra/file/upload`,
-    method: 'POST',
+    method: "POST",
     query: query,
     secure: true,
     skipBizLogic: false,
@@ -58,10 +59,13 @@ export const postInfraFileUpload = (
  * @request POST:/app-api/infra/file/create
  * @secure
  */
-export const postInfraFileCreate = (data: FileCreateReqVO, params: RequestParams = {}) =>
+export const postInfraFileCreate = (
+  data: FileCreateReqVO,
+  params: RequestParams = {},
+) =>
   request<CommonResultLong>({
     path: `/app-api/infra/file/create`,
-    method: 'POST',
+    method: "POST",
     body: data,
     secure: true,
     type: ContentType.Json,
@@ -90,7 +94,7 @@ export const getSystemTenantGetByWebsite = (
 ) =>
   request<CommonResultAppTenantRespVO>({
     path: `/app-api/system/tenant/get-by-website`,
-    method: 'GET',
+    method: "GET",
     query: query,
     secure: true,
     skipBizLogic: false,
@@ -118,7 +122,7 @@ export const getSystemDictDataType = (
 ) =>
   request<CommonResultListAppDictDataRespVO>({
     path: `/app-api/system/dict-data/type`,
-    method: 'GET',
+    method: "GET",
     query: query,
     secure: true,
     skipBizLogic: false,
@@ -137,7 +141,7 @@ export const getSystemDictDataType = (
 export const getSystemAreaTree = (params: RequestParams = {}) =>
   request<CommonResultListAppAreaNodeRespVO>({
     path: `/app-api/system/area/tree`,
-    method: 'GET',
+    method: "GET",
     secure: true,
     skipBizLogic: false,
     ...params,
@@ -163,7 +167,7 @@ export const getInfraFilePresignedUrl = (
 ) =>
   request<CommonResultFilePresignedUrlRespVO>({
     path: `/app-api/infra/file/presigned-url`,
-    method: 'GET',
+    method: "GET",
     query: query,
     secure: true,
     skipBizLogic: false,

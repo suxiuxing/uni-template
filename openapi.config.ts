@@ -1,10 +1,11 @@
 import path from 'node:path';
 import process from 'node:process';
-import type { GenerateApiParams } from 'swagger-typescript-api';
 import { generateApi } from 'swagger-typescript-api';
 import { loadEnv } from 'vite';
 
 const cwd = process.cwd();
+
+type GenerateApiParams = Parameters<typeof generateApi>[0];
 
 const commonParams: Partial<GenerateApiParams> = {
   modular: true,
