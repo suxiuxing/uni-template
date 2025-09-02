@@ -13,7 +13,7 @@ const commonParams: Partial<GenerateApiParams> = {
   templates: path.resolve(cwd, './templates'),
 };
 
-const { VITE_API_HOST } = loadEnv(process.env.mod || 'development', cwd);
+const { VITE_API_HOST } = loadEnv(process.env.mode || 'development', cwd);
 
 const gen = async () => {
   await generateApi({
