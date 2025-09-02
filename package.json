@@ -92,7 +92,7 @@
     "eslint-plugin-vue": "^10.4.0",
     "globals": "^16.3.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.1.5",
+    "lint-staged": "^16.1.6",
     "postcss": "^8.5.6",
     "prettier": "^3.6.2",
     "prettier-plugin-organize-imports": "^4.2.0",
@@ -108,5 +108,5 @@
     "vue-tsc": "^3.0.6",
     "weapp-tailwindcss": "^4.2.6"
   },
-  "packageManager": "pnpm@10.15.0"
+  "packageManager": "pnpm@10.15.1"
 }
